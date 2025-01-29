@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Real Estate Management</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        width: 90%;
+        margin: 20px auto;
+        max-width: 1200px;
+      }
+      .hero {
+        background-image: url("real-estate-hero.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        text-align: center;
+        color: white;
+        padding-top: 150px;
+      }
+      .hero h2 {
+        font-size: 2.5em;
+      }
+      .section {
+        background-color: white;
+        padding: 30px;
+        margin: 20px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #4caf50;
+      }
+      p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: #666;
+      }
+      .property {
+        display: block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .property-card {
+        background-color: white;
+        width: 100%;
+        margin: 15px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .property-card img {
+        width: 100%;
+        height: 200px;
+      }
+      .property-card h3 {
+        margin: 10px;
+        font-size: 1.5em;
+      }
+      .property-card p {
+        margin: 10px;
+        font-size: 1.1em;
+        color: #666;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      footer p {
+        margin: 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        white-space: nowrap; /* Prevent line breaks */
+        display: inline-block; /* Make it inline-block for proper animation */
+        animation: marquee 10s linear infinite; /* Apply animation */
+      }
+      @keyframes marquee {
+        from {
+          transform: translateX(100%); /* Start off the right edge */
+        }
+        to {
+          transform: translateX(-100%); /* End off the left edge */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Real Estate Management</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" style="background-image: url('img/20241020111408.jpg')">
+      <h2>Your Dream Home Awaits</h2>
+      <br /><br /><br /><br /><br /><br />
+      <p>Find the perfect property for your needs</p>
+    </div>
+
+    <div class="container">
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+          We are a leading real estate management firm providing premium
+          services to help you find the perfect home, manage your properties, or
+          invest in real estate. With years of experience in the industry, we
+          are committed to providing a seamless and satisfying experience for
+          our clients.
+        </p>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Property Sales</li>
+          <li>Property Rentals</li>
+          <li>Property Management</li>
+          <li>Real Estate Investment Consulting</li>
+        </ul>
+      </section>
+
+      <!-- Properties Section -->
+      <section id="properties" class="section">
+        <h2>Available Properties</h2>
+        <div class="property">
+          <!-- Property 1 -->
+          <div class="property-card">
+            <img src="img/20241020110616.jpg" alt="House 1" />
+            <h3>Luxury Villa</h3>
+            <p>
+              Located in the heart of the city, this stunning villa offers 4
+              bedrooms, 3 baths, a private pool, and a beautiful garden.
+            </p>
+          </div>
+          <!-- Property 2 -->
+          <div class="property-card">
+            <img src="img/20241020110609.jpg" alt="House 2" />
+            <h3>Modern Apartment</h3>
+            <p>
+              This modern apartment comes with 2 bedrooms, a spacious living
+              area, and an amazing city view.
+            </p>
+          </div>
+          <!-- Property 3 -->
+          <div class="property-card">
+            <img src="img/20241020110602.jpg" alt="House 3" />
+            <h3>Cozy Cottage</h3>
+            <p>
+              A charming cottage located in the suburbs, perfect for a small
+              family looking for peace and quiet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>
+          Get in touch with us today for more information or to schedule a
+          property viewing.
+        </p>
+        <p>Email: info@realestatemanagement.com</p>
+        <p>Phone: +123 456 7890</p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Real Estate Management | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

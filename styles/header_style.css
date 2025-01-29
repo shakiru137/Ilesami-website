@@ -1,0 +1,78 @@
+/* Background Wrapper */
+.background-wrapper {
+  background-image: url("/image/house_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Transparent background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.company_name {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.company_name h2 {
+  margin: 0;
+  font-size: 2.5em;
+  white-space: nowrap; /* Prevent line breaks */
+  display: inline-block; /* Make it inline-block for proper animation */
+  animation: marquee 10s linear infinite; /* Apply animation */
+  color: #fff;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%); /* Start off the right edge */
+  }
+  to {
+    transform: translateX(-100%); /* End off the left edge */
+  }
+}
+
+header .logo img {
+  width: 80px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.social-media a {
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ff7f50; /* Highlight color */
+}
