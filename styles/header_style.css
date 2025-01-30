@@ -1,6 +1,6 @@
 /* Background Wrapper */
 .background-wrapper {
-  background-image: url("./image/house.JPG");
+  background-image: url("./image/house.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
