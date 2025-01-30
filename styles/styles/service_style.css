@@ -1,0 +1,27 @@
+#services {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #f0d906;
+}
+
+.service-item {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.service-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
