@@ -124,6 +124,17 @@ header {
   background: linear-gradient(#0d72e5, #69600c);
   padding: 0;
   margin: 0;
+}
+
+/* Marquee Container */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: linear-gradient(#0d72e5, #69600c);
+  padding: 0;
+  margin: 0;
   /* margin-left: -20px; */
 }
 
