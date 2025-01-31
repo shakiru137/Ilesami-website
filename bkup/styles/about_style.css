@@ -1,0 +1,38 @@
+#about {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0d906;
+}
+
+.team {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+#about p {
+  text-align: center;
+}

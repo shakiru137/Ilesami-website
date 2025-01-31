@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ABIK ENGINEERING CONSTRUCTION LIMITED is a leading provider of real estate and civil engineering solutions."
+    />
+    <meta
+      name="keywords"
+      content="real estate, construction, civil engineering, infrastructure, property development"
+    />
+    <meta name="author" content="ABIK Engineering & Construction" />
+
+    <title>ABIK ENGINEERING CONSTRUCTION LIMITED</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/header_style.css" />
+    <!-- <link rel="stylesheet" href="styles/hero_style.css" /> -->
+    <link rel="stylesheet" href="styles/about_style.css" />
+    <link rel="stylesheet" href="styles/service_style.css" />
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: linear-gradient(blue, #f5f5f5);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .hero {
+          padding: 60px 20px;
+        }
+
+        .cta-button {
+          padding: 12px 25px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .cta-button {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+
+        .team {
+          flex-direction: column;
+        }
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Wrapper -->
+    <div class="background-wrapper">
+      <!-- Header Section -->
+      <header data-aos="fade-down">
+        <div class="flex">
+          <!-- Scrolling Marquee -->
+          <div class="marquee-container">
+            <div class="marquee">
+              <span>ABIK ENGINEERING CONSTRUCTION LIMITED</span>
+            </div>
+          </div>
+          <div class="flex2">
+            <!-- Logo -->
+            <div class="logo">
+              <img
+                src="image/logo.png"
+                alt="ABIK Engineering & Construction Logo"
+              />
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+              <a href="https://facebook.com/ABIK">Facebook</a>
+              <a href="https://twitter.com/ABIK">Twitter</a>
+              <a href="https://linkedin.com/company/ABIK">LinkedIn</a>
+            </div>
+
+            <!-- Navigation Menu (with Hamburger Icon) -->
+            <nav>
+              <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <script>
+            // Get elements
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("nav-links");
+
+            // Toggle navigation menu
+            hamburger.addEventListener("click", () => {
+              navLinks.classList.toggle("active");
+            });
+          </script>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero" data-aos="flip-left">
+        <h1>Your Dream Home Awaits</h1>
+        <p style="color: #f0d906">
+          Your trusted partner in Real Estate and Building Construction.
+        </p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </section>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p>
+        ABIK ENGINEERING CONSTRUCTION LIMITED is a premier real estate and
+        construction firm dedicated to delivering top-tier services. We
+        specialize in real estate management, helping clients find their dream
+        homes, manage properties, and make smart investment decisions. With
+        years of industry expertise, we are committed to providing a seamless,
+        reliable, and rewarding experience for every client.
+      </p>
+      <div class="team">
+        <div class="team-member">
+          <img src="image/me.jpg" alt="Ilesanmi Shakiru - CEO" />
+          <p>Ilesanmi Shakiru - CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="image/me2.jpg" alt="Ilesanmi Yusuf - Project Manager" />
+          <p>Ilesanmi Yusuf - Project Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up">
+      <h2>Our Services</h2>
+
+      <div class="service-item">
+        <h3>Real Estate</h3>
+        <p>
+          We provide buying, selling, and property management services to help
+          you find your dream property.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>Building Design / Architecture</h3>
+        <p>
+          Our engineering team offers expertise in designing and building
+          infrastructure projects.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>Property Rentals</h3>
+        <p>
+          We offer rental services for both residential and commercial
+          properties, ensuring a seamless leasing process.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>Property Management</h3>
+        <p>
+          From tenant screening to maintenance, we handle all aspects of
+          property management to keep your investment secure.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>Real Estate Investment Consulting</h3>
+        <p>
+          Our experts provide strategic insights and advice on real estate
+          investments to maximize your returns.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form with EmailJS -->
+    <section id="contact" data-aos="zoom-in">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <section id="contact" class="contact_2">
+        <p>
+          Get in touch with us today for more information or to schedule a
+          property viewing.
+        </p>
+        <h4>Registered Office</h4>
+        <p>
+          Address:
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Plot+17,+H-I,+Orange+Estate,+Arepo,+Lagos+State,+Nigeria"
+            target="_blank"
+          >
+            📍Plot 17, H-I, Orange Estate, Arepo, Lagos State, Nigeria.
+          </a>
+
+          <a
+            href="geo:0,0?q=Plot+17,+H-I,+Orange+Estate,+Arepo,+Lagos+State,+Nigeria"
+          >
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:abikengineeringconstructnlmtd@gmail.com">
+            abikengineeringconstructnlmtd@gmail.com
+          </a>
+        </p>
+
+        <p>Phone: <a href="tel:+2347066514206">+234-706-651-4206</a></p>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <small
+          >&copy; 2025 ABIK ENGINEERING CONSTRUCTION LIMITED | All Rights
+          Reserved</small
+        >
+      </p>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "YOUR_TRACKING_ID");
+    </script>
+
+    <!-- EmailJS -->
+    <script src="script/email_js.js"></script>
+  </body>
+</html>
