@@ -1,0 +1,124 @@
+/* Our Projects Section */
+.our-projects {
+  padding: 50px 10%;
+  background: linear-gradient(to right, #222, #444);
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #f0d906;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* Wrapper: Organizes Image & Text */
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image Container */
+.projects-image {
+  flex: 1;
+  max-width: 450px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeIn 1s forwards ease-in-out;
+}
+
+.projects-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Items */
+.projects-container {
+  flex: 2;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards ease-in-out;
+}
+
+.projects-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  color: #f0d906;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .projects-container {
+    text-align: center;
+  }
+
+  .project-item {
+    width: 90%;
+  }
+}
