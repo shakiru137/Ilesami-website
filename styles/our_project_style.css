@@ -6,6 +6,7 @@
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  padding: 10px;
 }
 
 .section-title {
@@ -13,26 +14,26 @@
   color: #f0d906;
   margin-bottom: 20px;
   letter-spacing: 1px;
-  padding: 10px;
-  text-transform: uppercase;
 }
 
-/* Wrapper: Organizes Image & Text */
+/* Projects Wrapper: Uses Grid Layout */
 .projects-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns for Laptop */
   gap: 40px;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 /* Image Container */
 .projects-image {
-  flex: 1;
+  width: 100%;
   max-width: 450px;
   opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeIn 1s forwards ease-in-out;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards ease-in-out;
+  grid-column: span 3; /* Image spans all 3 columns */
 }
 
 .projects-image img {
@@ -47,27 +48,21 @@
   transform: scale(1.05);
 }
 
-/* Project Items */
+/* Project Items: Grid-Based */
 .projects-container {
-  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   text-align: left;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s forwards ease-in-out;
 }
 
-.projects-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #ddd;
-  margin-bottom: 20px;
-}
-
 .project-item {
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 10px;
-  margin-bottom: 15px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -84,6 +79,7 @@
 
 .project-item p {
   font-size: 1rem;
+  color: #ddd;
 }
 
 /* Animations */
@@ -104,21 +100,22 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .projects-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .projects-image {
-    max-width: 100%;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns for Mobile */
   }
 
   .projects-container {
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-image {
+    grid-column: span 2; /* Image spans both columns */
+    order: 2; /* Moves the image below the projects */
   }
 
   .project-item {
-    width: 90%;
+    text-align: center;
+  }
+  .project-item p {
+    padding: 5px;
   }
 }

@@ -134,7 +134,7 @@
 
             <!-- Navigation Menu (with Hamburger Icon) -->
             <nav>
-              <div class="hamburger" id="hamburger">
+              <div class="hamburger" id="hamburger" style="margin-right: 10px">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -143,9 +143,12 @@
               <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#vision-mission">Vision-Mission</a></li>
+                <li><a href="#core-values">Core-Values</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a href="#contact" style="padding-right: 20px">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -198,7 +201,7 @@
     </section>
 
     <!-- Vision & Mission Section -->
-    <section class="vision-mission" data-aos="fade-up">
+    <section id="vision-mission" class="vision-mission" data-aos="fade-up">
       <div class="vision" data-aos="fade-right">
         <h2>Our Vision</h2>
         <p>
@@ -229,7 +232,7 @@
       </script>
     </section>
     <!-- Core Values Section -->
-    <section class="core-values" data-aos="fade-up">
+    <section id="core-values" class="core-values" data-aos="fade-up">
       <h2 class="section-title">Our Core Values</h2>
       <div class="values-wrapper">
         <div class="core-image" data-aos="fade-right">
@@ -339,15 +342,14 @@
     <!-- Our Projects Section -->
     <section class="our-projects" data-aos="fade-up">
       <h2 class="section-title">Our Projects</h2>
+      <p>
+        ABIK Engineering Construction Limited has completed numerous projects
+        across the Southwest region of Nigeria, with a focus on quality
+        craftsmanship, innovation, and customer satisfaction. Below are some
+        notable projects
+      </p>
       <div class="projects-wrapper">
         <div class="projects-container">
-          <p>
-            ABIK Engineering Construction Limited has completed numerous
-            projects across the Southwest region of Nigeria, with a focus on
-            quality craftsmanship, innovation, and customer satisfaction. Below
-            are some notable projects:
-          </p>
-
           <div class="project-item" data-aos="zoom-in">
             <h3>4-Storey Building for Davebrooks School</h3>
             <p><strong>Location:</strong> Magboro Makogi, Ogun State</p>
@@ -408,6 +410,14 @@
           </div>
 
           <div class="project-item" data-aos="zoom-in">
+            <h3>
+              Renovation of Wards and Furnishings at University College Hospital
+            </h3>
+            <p><strong>Location:</strong> Ibadan, Oyo State</p>
+            <p><strong>Status:</strong> Completed (2020–2023)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
             <h3>3-Bedroom Flat Duplex for Mr. Ajayi Fisayo</h3>
             <p><strong>Location:</strong> Ado-Ekiti</p>
             <p><strong>Status:</strong> 70% Completed (2024–Present)</p>
@@ -419,10 +429,13 @@
             <p><strong>Status:</strong> Ongoing (2024)</p>
           </div>
         </div>
+      </div>
+      <br />
+      <center>
         <div class="projects-image" data-aos="fade-right">
           <img src="image/ourProjectImage.png" alt="Our Projects" />
         </div>
-      </div>
+      </center>
     </section>
 
     <!-- Contact Form with EmailJS -->

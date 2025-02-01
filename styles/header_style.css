@@ -112,7 +112,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 0;
+  padding-top: 10px;
 }
 
 /* Marquee Container */
@@ -194,7 +194,7 @@ header .logo img {
   background: rgba(0, 0, 0, 0.5);
   padding: 0;
   width: 75%;
-  height: 50%;
+  height: 40%;
   border-radius: 10px;
 }
 
