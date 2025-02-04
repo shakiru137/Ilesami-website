@@ -1,53 +1,51 @@
-#contact {
-  padding: 60px 20px;
-  background-color: #f8f8f8;
+.contact-section {
+  padding: 60px 5%;
+  background: linear-gradient(to right, #1e1e1e, #333);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact_2 {
-  padding: 60px 20px;
-  background-color: #222;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
+.section-title {
+  font-size: 2.5rem;
   color: #f0d906;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-details {
+  font-size: 1.1rem;
+  line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
 }
 
-label {
-  font-size: 1.1rem;
+.contact-details a {
+  color: #ff7f50;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-input,
-textarea {
-  padding: 10px;
-  font-size: 1rem;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.contact-details a:hover {
+  color: #ff6347;
 }
 
-.submit-btn {
-  padding: 10px 20px;
-  background-color: #ff7f50;
-  color: white;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #ff6347;
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .contact-description {
+    font-size: 1rem;
+  }
+  .contact-details {
+    font-size: 1rem;
+  }
 }
