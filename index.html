@@ -32,17 +32,8 @@
     <link rel="stylesheet" href="styles/weChooseUs.css" />
     <link rel="stylesheet" href="styles/gallery.css" />
 
-
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-
     <style>
-      * {
-        /* max-width: 100%; */
-        /* box-sizing: border-box; */
-      }
+      /* Global Reset */
       html,
       body {
         font-family: Arial, sans-serif;
@@ -61,16 +52,13 @@
           flex-direction: column;
           align-items: center;
         }
-
         nav ul {
           flex-direction: column;
           gap: 10px;
         }
-
         .hero {
           padding: 60px 20px;
         }
-
         .cta-button {
           padding: 12px 25px;
         }
@@ -81,26 +69,26 @@
           flex-direction: column;
           align-items: center;
         }
-
         .hero h1 {
           font-size: 2rem;
         }
-
         .cta-button {
           font-size: 1rem;
           padding: 10px 20px;
         }
-
         .team {
           flex-direction: column;
         }
       }
 
+      /* Footer Styles */
       footer {
-        background-color: #333;
+        background: linear-gradient(to right, #0d72e5, #69600c);
         color: white;
         padding: 10px 0;
         text-align: center;
+        width: 100vw;
+        margin: 0;
       }
       footer p {
         margin: 0;
@@ -108,71 +96,63 @@
     </style>
   </head>
   <body>
+    <!-- Header Section -->
+    <header
+      style="position: fixed; top: 0; left: 0; width: 100%; z-index: 9999"
+    >
+      <div class="flex">
+        <!-- Scrolling Marquee -->
+        <div class="marquee-container">
+          <div class="marquee">
+            <span>ABIK ENGINEERING CONSTRUCTION LIMITED</span>
+          </div>
+        </div>
+        <div class="flex2">
+          <!-- Logo -->
+          <div class="logo">
+            <img
+              src="image/LOGO.jpg"
+              alt="ABIK Engineering & Construction Logo"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-media">
+            <a href="https://facebook.com/ABIK">Facebook</a>
+            <a href="https://twitter.com/ABIK">Twitter</a>
+            <a href="https://linkedin.com/company/ABIK">LinkedIn</a>
+            <a href="https://instagram.com/company/ABIK">Instagram</a>
+          </div>
+
+          <!-- Navigation Menu (with Hamburger Icon) -->
+          <nav>
+            <div class="hamburger" id="hamburger" style="margin-right: 10px">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+
+            <ul id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#vision-mission">Vision-Mission</a></li>
+              <li><a href="#core-values">Core-Values</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#our-projects">Our-Projects</a></li>
+              <li><a href="#our-team">Our-Team</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li>
+                <a href="#contact" style="padding-right: 20px">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <!-- Background Wrapper -->
     <div class="background-wrapper" data-aos="slide-right">
-      <!-- Header Section -->
-      <header data-aos="fade-down">
-        <div class="flex">
-          <!-- Scrolling Marquee -->
-          <div class="marquee-container">
-            <div class="marquee">
-              <span>ABIK ENGINEERING CONSTRUCTION LIMITED</span>
-            </div>
-          </div>
-          <div class="flex2">
-            <!-- Logo -->
-            <div class="logo">
-              <img
-                src="image/LOGO.jpg"
-                alt="ABIK Engineering & Construction Logo"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Social Media Links -->
-            <div class="social-media">
-              <a href="https://facebook.com/ABIK">Facebook</a>
-              <a href="https://twitter.com/ABIK">Twitter</a>
-              <a href="https://linkedin.com/company/ABIK">LinkedIn</a>
-              <a href="https://instagram.com/company/ABIK">Instagram</a>
-            </div>
-
-            <!-- Navigation Menu (with Hamburger Icon) -->
-            <nav>
-              <div class="hamburger" id="hamburger" style="margin-right: 10px">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div>
-
-              <ul id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#vision-mission">Vision-Mission</a></li>
-                <li><a href="#core-values">Core-Values</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#our-projects">Our-Projects</a></li>
-                <li><a href="#our-team">Our-Team</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li>
-                  <a href="#contact" style="padding-right: 20px">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <script>
-            // Get elements
-            const hamburger = document.getElementById("hamburger");
-            const navLinks = document.getElementById("nav-links");
-
-            // Toggle navigation menu
-            hamburger.addEventListener("click", () => {
-              navLinks.classList.toggle("active");
-            });
-          </script>
-        </div>
-      </header>
-
       <!-- Hero Section -->
       <section id="home" class="hero" data-aos="slide-up">
         <h2>Your Dream Home Awaits</h2>
@@ -230,15 +210,8 @@
           that every project we undertake exceeds expectations.
         </p>
       </div>
-      <!-- AOS Library -->
-      <script>
-        AOS.init({
-          duration: 1000, // Animation duration
-          easing: "ease-in-out", // Smooth easing effect
-          once: true, // Animation runs once
-        });
-      </script>
     </section>
+
     <!-- Core Values Section -->
     <section id="core-values" class="core-values" data-aos="fade-up">
       <h2 class="section-title">Our Core Values</h2>
@@ -281,7 +254,7 @@
 
     <!-- Services Section -->
     <section id="services" data-aos="fade-up">
-      <h2>Our Services</h2>
+      <h2 style="text-transform: uppercase; font-size: 2rem">Our Services</h2>
       <p style="font-weight: bold">
         At ABIK Engineering Construction Limited, we offer a comprehensive range
         of services designed to meet our clients' diverse needs with quality and
@@ -356,6 +329,7 @@
         craftsmanship, innovation, and customer satisfaction. Below are some
         notable projects
       </p>
+
       <div class="projects-wrapper">
         <div class="projects-container">
           <div class="project-item" data-aos="zoom-in">
@@ -441,18 +415,25 @@
       <br />
       <center>
         <div class="projects-image" data-aos="fade-right">
-          <img src="image/ourProjectImage.jpg" alt="Our Projects" loading="lazy"/>
+          <img
+            src="image/ourProjectImage.jpg"
+            alt="Our Projects"
+            loading="lazy"
+          />
         </div>
       </center>
     </section>
 
     <!-- Our Team Section -->
     <section id="our-team" class="our-team">
-      
       <h2 class="section-title" data-aos="fade-up">Our Team</h2>
       <div class="team-wrapper">
         <div class="team-member" data-aos="fade-up">
-          <img src="image/CEO.jpg" alt="Ilesanmi Oluwatosin E." loading="lazy" />
+          <img
+            src="image/CEO.jpg"
+            alt="Ilesanmi Oluwatosin E."
+            loading="lazy"
+          />
           <div class="team-info">
             <h3>Ilesanmi Oluwatosin E.</h3>
             <p><strong>HND Civil Engineering</strong></p>
@@ -466,7 +447,6 @@
         </div>
 
         <div class="team-member" data-aos="fade-up">
-        
           <div class="team-info">
             <h3>Makanjuola Tolulope</h3>
             <p><strong>BSc Civil Engineering</strong></p>
@@ -528,80 +508,135 @@
             </p>
           </div>
         </div>
-        <!-- <center>
-        <div class="team-member"><img src="tolulop.jpg" alt="Makanjuola Tolulope" loading="lazy" /></div>
-      </center> -->
+      </div>
     </section>
 
+    <!-- Why Choose Us Section -->
     <section class="why-choose-us" data-aos="fade-up">
       <h2 class="section-title">Why Choose Us?</h2>
       <div class="choose-wrapper">
-          <div class="choose-item" data-aos="fade-right">
-              <h3>Experienced Team</h3>
-              <p>Our engineers and project managers bring years of experience in delivering complex projects efficiently.</p>
-          </div>
-          <div class="choose-item" data-aos="fade-left">
-              <h3>Client-Centric Approach</h3>
-              <p>We focus on understanding the unique needs of each client and tailor our services to meet them.</p>
-          </div>
-          <div class="choose-item" data-aos="fade-right">
-              <h3>Timely Delivery</h3>
-              <p>We ensure that projects are completed within the agreed timelines without compromising on quality.</p>
-          </div>
-          <div class="choose-item" data-aos="fade-left">
-              <h3>Innovation & Technology</h3>
-              <p>We utilize the latest technologies and best practices in construction and project management.</p>
-          </div>
+        <div class="choose-item" data-aos="fade-right">
+          <h3>Experienced Team</h3>
+          <p>
+            Our engineers and project managers bring years of experience in
+            delivering complex projects efficiently.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-left">
+          <h3>Client-Centric Approach</h3>
+          <p>
+            We focus on understanding the unique needs of each client and tailor
+            our services to meet them.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-right">
+          <h3>Timely Delivery</h3>
+          <p>
+            We ensure that projects are completed within the agreed timelines
+            without compromising on quality.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-left">
+          <h3>Innovation & Technology</h3>
+          <p>
+            We utilize the latest technologies and best practices in
+            construction and project management.
+          </p>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <section id="gallery" class="gallery-section">
-    <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
-    <div class="gallery-wrapper" data-aos="zoom-in">
-        <div class="gallery-item"><img src="image/1.jpg" alt="Gallery Image 1" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/2.jpg" alt="Gallery Image 2" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/3.jpg" alt="Gallery Image 3" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/4.jpg" alt="Gallery Image 4" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/5.jpg" alt="Gallery Image 5" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/6.jpg" alt="Gallery Image 6" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/7.jpg" alt="Gallery Image 7" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/1.jpg" alt="Gallery Image 8" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/8.jpg" alt="Gallery Image 9" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/10.jpg" alt="Gallery Image 10" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/11.jpg" alt="Gallery Image 11" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/12.jpg" alt="Gallery Image 12" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/13.jpg" alt="Gallery Image 13" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/14.jpg" alt="Gallery Image 14" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/15.jpg" alt="Gallery Image 15" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/16.jpg" alt="Gallery Image 16" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/17.jpg" alt="Gallery Image 17" loading="lazy"></div>
-        <div class="gallery-item"><img src="image/18.jpg" alt="Gallery Image 18" loading="lazy"></div>
-    </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+      <div class="gallery-wrapper" data-aos="zoom-in">
+        <div class="gallery-item">
+          <img src="image/1.jpg" alt="Gallery Image 1" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/2.jpg" alt="Gallery Image 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/3.jpg" alt="Gallery Image 3" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/4.jpg" alt="Gallery Image 4" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/5.jpg" alt="Gallery Image 5" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/6.jpg" alt="Gallery Image 6" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/7.jpg" alt="Gallery Image 7" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/1.jpg" alt="Gallery Image 8" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/8.jpg" alt="Gallery Image 9" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/10.jpg" alt="Gallery Image 10" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/11.jpg" alt="Gallery Image 11" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/12.jpg" alt="Gallery Image 12" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/13.jpg" alt="Gallery Image 13" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/14.jpg" alt="Gallery Image 14" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/15.jpg" alt="Gallery Image 15" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/16.jpg" alt="Gallery Image 16" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/17.jpg" alt="Gallery Image 17" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/18.jpg" alt="Gallery Image 18" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-
+    <!-- Contact Form Section -->
     <section id="contact" class="contact-section" data-aos="zoom-in">
       <h2 class="section-title">Contact Us</h2>
-      <p class="contact-description">Get in touch with us today for more information or to schedule a property viewing.</p>
-      
+      <p class="contact-description">
+        Get in touch with us today for more information or to schedule a
+        property viewing.
+      </p>
+
       <div class="contact-details">
-          <h4>Registered Office</h4>
-          <p>
-              Address:
-              <a href="https://www.google.com/maps/search/?api=1&query=Plot+17,+H-I,+Orange+Estate,+Arepo,+Lagos+State,+Nigeria" target="_blank">
-                  📍 Plot 17, H-I, Orange Estate, Arepo, Lagos State, Nigeria.
-              </a>
-          </p>
-  
-          <p>
-              Email:
-              <a href="mailto:abikengineeringconstructnlmtd@gmail.com">
-                  abikengineeringconstructnlmtd@gmail.com
-              </a>
-          </p>
-  
-          <p>Phone: <a href="tel:+2347066514206">+234-706-651-4206</a></p>
+        <h4>Registered Office</h4>
+        <p>
+          Address:
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Plot+17,+H-I,+Orange+Estate,+Arepo,+Lagos+State,+Nigeria"
+            target="_blank"
+          >
+            📍 Plot 17, H-I, Orange Estate, Arepo, Lagos State, Nigeria.
+          </a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:abikengineeringconstructnlmtd@gmail.com">
+            abikengineeringconstructnlmtd@gmail.com
+          </a>
+        </p>
+
+        <p>Phone: <a href="tel:+2347066514206">+234-706-651-4206</a></p>
       </div>
-  </section>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -633,7 +668,16 @@
       gtag("config", "YOUR_TRACKING_ID");
     </script>
 
-    <!-- EmailJS -->
-    <script src="script/email_js.js"></script>
+    <!-- Navigation Menu Toggle -->
+    <script>
+      // Get elements
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      // Toggle navigation menu
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

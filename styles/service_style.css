@@ -2,7 +2,7 @@
 #services {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #222, #444);
+  background: linear-gradient(to right, #0d72e5, #69600c);
 }
 
 .service-container {
@@ -14,7 +14,7 @@
 }
 
 .service-item {
-  width: 300px;
+  width: 100%;
   padding: 20px;
   background: linear-gradient(to right, #0d72e5, #69600c);
   border-radius: 8px;
@@ -26,7 +26,8 @@
   transform: translateY(-5px);
 }
 
-.service-item h3 {
+.service-item h3,
+h2 {
   color: #f0d906;
   font-size: 1.2em;
 }

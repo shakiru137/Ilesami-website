@@ -173,11 +173,12 @@ header .logo img {
 
 /* Social Media */
 .social-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 10px;
 }
 
 .social-media a {
-  padding: 10px;
   margin-left: 10px;
   color: #f0d906;
   text-decoration: none;
