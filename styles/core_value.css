@@ -1,15 +1,15 @@
 /* Core Values Section */
 .core-values {
   padding: 50px 10%;
-  background: linear-gradient(to right, #0d72e5, #69600c);
-  color: white;
+  background: #333333; /* Gradient using your color scheme */
+  color: #f8f8f8; /* Light text for contrast */
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
   font-size: 1.8rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for title */
   margin-bottom: 20px;
   letter-spacing: 1px;
   padding: 10px;
@@ -61,14 +61,14 @@
 
 .value-box h3 {
   font-size: 1.4rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for the headings */
   margin-bottom: 10px;
 }
 
 .value-box p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ddd;
+  color: #ddd; /* Light gray text */
 }
 
 /* Responsive Design */

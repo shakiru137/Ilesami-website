@@ -1,14 +1,15 @@
+/* Contact Section */
 .contact-section {
   padding: 60px 5%;
-  background: linear-gradient(to right, #1e1e1e, #333);
+  background: #333333; /* Gradient using your color scheme */
   text-align: center;
-  color: white;
+  color: #f8f8f8; /* Light text for contrast */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for title */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -28,15 +29,16 @@
 }
 
 .contact-details a {
-  color: #ff7f50;
+  color: #f8f8f8; /* White links for readability */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .contact-details a:hover {
-  color: #ff6347;
+  color: #ff7f50; /* Orange highlight on hover */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;

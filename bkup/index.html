@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ABIK ENGINEERING CONSTRUCTION LIMITED is a leading provider of real estate and civil engineering solutions."
+    />
+    <meta
+      name="keywords"
+      content="real estate, construction, civil engineering, infrastructure, property development"
+    />
+    <meta name="author" content="ABIK Engineering & Construction" />
+
+    <title>ABIK ENGINEERING CONSTRUCTION LIMITED</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/header_style.css" />
+    <link rel="stylesheet" href="styles/about_style.css" />
+    <link rel="stylesheet" href="styles/service_style.css" />
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <link rel="stylesheet" href="styles/vision_and_mission.css" />
+    <link rel="stylesheet" href="styles/core_value.css" />
+    <link rel="stylesheet" href="styles/our_project_style.css" />
+    <link rel="stylesheet" href="styles/our_team.css" />
+    <link rel="stylesheet" href="styles/weChooseUs.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+
+    <style>
+      /* Global Reset */
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        width: 100vw;
+        max-width: 100vw;
+        background: linear-gradient(#f5f5f5, rgba(0, 0, 255, 0.5), #f5f5f5);
+        overflow-x: hidden;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .hero {
+          padding: 60px 20px;
+        }
+        .cta-button {
+          padding: 12px 25px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .cta-button {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+        .team {
+          flex-direction: column;
+        }
+      }
+
+      /* Footer Styles */
+      footer {
+        background: linear-gradient(to right, #0d72e5, #69600c);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+      }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header
+      style="position: fixed; top: 0; left: 0; width: 100%; z-index: 9999"
+    >
+      <div class="flex">
+        <!-- Scrolling Marquee -->
+        <div class="marquee-container">
+          <div class="marquee">
+            <span>ABIK ENGINEERING CONSTRUCTION LIMITED</span>
+          </div>
+        </div>
+        <div class="flex2">
+          <!-- Logo -->
+          <div class="logo">
+            <img
+              src="image/LOGO.jpg"
+              alt="ABIK Engineering & Construction Logo"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-media">
+            <a href="https://facebook.com/ABIK">Facebook</a>
+            <a href="https://twitter.com/ABIK">Twitter</a>
+            <a href="https://linkedin.com/company/ABIK">LinkedIn</a>
+            <a href="https://instagram.com/company/ABIK">Instagram</a>
+          </div>
+
+          <!-- Navigation Menu (with Hamburger Icon) -->
+          <nav>
+            <div class="hamburger" id="hamburger" style="margin-right: 10px">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+
+            <ul id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#vision-mission">Vision-Mission</a></li>
+              <li><a href="#core-values">Core-Values</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#our-projects">Our-Projects</a></li>
+              <li><a href="#our-team">Our-Team</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li>
+                <a href="#contact" style="padding-right: 20px">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Background Wrapper -->
+    <div class="background-wrapper" data-aos="slide-right">
+      <!-- Hero Section -->
+      <section id="home" class="hero" data-aos="slide-up">
+        <h2>Your Dream Home Awaits</h2>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+        <p style="color: white">
+          Your trusted partner in Real Estate and Building Construction
+        </p>
+      </section>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" data-aos="fade-up">
+      <div class="about-container">
+        <!-- Text Content -->
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            ABIK Engineering Construction Limited is a Nigerian-based company
+            dedicated to excellence in the construction, engineering, and
+            project management sector. With a strong foundation built on years
+            of experience and a track record of successful projects, we are
+            committed to delivering top-notch services in project management,
+            construction, and consultancy. We operate across various sectors and
+            geographical locations with a focus on innovation, quality, and
+            timely delivery.
+          </p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="about-image">
+          <img src="image/aboutImg.jpg" alt="Story Building" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision-mission" class="vision-mission" data-aos="fade-up">
+      <div class="vision" data-aos="fade-right">
+        <h2>Our Vision</h2>
+        <p>
+          To become a leading construction and project management firm in
+          Nigeria, setting new benchmarks in quality, innovation, and customer
+          satisfaction.
+        </p>
+      </div>
+
+      <div class="mission" data-aos="fade-left">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to provide exceptional construction, project
+          management, and consultancy services that meet the unique needs of
+          each client. We are committed to delivering projects on time, within
+          budget, and to the highest standards of quality and safety. Our
+          approach emphasizes innovation, integrity, and collaboration to ensure
+          that every project we undertake exceeds expectations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="core-values" class="core-values" data-aos="fade-up">
+      <h2 class="section-title">Our Core Values</h2>
+      <div class="values-wrapper">
+        <div class="core-image" data-aos="fade-right">
+          <img src="image/coreImg.jpg" alt="Core Values" loading="lazy" />
+        </div>
+        <div class="values-container">
+          <div class="value-box" data-aos="zoom-in">
+            <h3>Excellence</h3>
+            <p>
+              We strive for outstanding performance in all our projects,
+              ensuring client satisfaction.
+            </p>
+          </div>
+          <div class="value-box" data-aos="zoom-in">
+            <h3>Integrity</h3>
+            <p>
+              We maintain transparency, honesty, and ethical practices in all
+              our business dealings.
+            </p>
+          </div>
+          <div class="value-box" data-aos="zoom-in">
+            <h3>Innovation</h3>
+            <p>
+              We leverage modern construction techniques and innovative
+              solutions to meet our clients' needs.
+            </p>
+          </div>
+          <div class="value-box" data-aos="zoom-in">
+            <h3>Quality Assurance</h3>
+            <p>
+              We are committed to delivering high-quality projects, with a keen
+              eye on detail and safety.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up">
+      <h2 style="text-transform: uppercase; font-size: 2rem">Our Services</h2>
+      <p style="font-weight: bold">
+        At ABIK Engineering Construction Limited, we offer a comprehensive range
+        of services designed to meet our clients' diverse needs with quality and
+        precision
+      </p>
+
+      <div class="service-container">
+        <div class="service-item">
+          <h3>Project Management & Construction Supervision</h3>
+          <p>
+            We oversee projects from inception to completion, ensuring timely
+            delivery and adherence to the highest industry standards
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Project Valuation & Quantity Surveying</h3>
+          <p>
+            Our experts provide accurate cost estimation and budget management
+            to ensure financial efficiency in your projects
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Property Development & Land Acquisition</h3>
+          <p>
+            We specialize in site selection, land acquisition, and property
+            development for both commercial and residential projects
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Professional Consultancy</h3>
+          <p>
+            Get expert guidance on project management, cost valuation, quality
+            assurance, and construction strategies tailored to your needs
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Procurement of Building Materials</h3>
+          <p>
+            We source and supply high-quality construction materials, ensuring
+            durability and excellence in your projects
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>General Contracts & Merchandise</h3>
+          <p>
+            Our team manages contracts and projects across various sectors,
+            delivering timely execution and superior results
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h3>Civil Engineering & Construction Services</h3>
+          <p>
+            We specialize in large-scale building construction, infrastructure
+            projects, and comprehensive civil engineering solutions
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section id="our-projects" class="our-projects" data-aos="fade-up">
+      <h2 class="section-title">Our Projects</h2>
+      <p>
+        ABIK Engineering Construction Limited has completed numerous projects
+        across the Southwest region of Nigeria, with a focus on quality
+        craftsmanship, innovation, and customer satisfaction. Below are some
+        notable projects
+      </p>
+
+      <div class="projects-wrapper">
+        <div class="projects-container">
+          <div class="project-item" data-aos="zoom-in">
+            <h3>4-Storey Building for Davebrooks School</h3>
+            <p><strong>Location:</strong> Magboro Makogi, Ogun State</p>
+            <p><strong>Status:</strong> Completed (2015–2019)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>3-Bedroom Duplex (2 Wings) for Barrister Daniel Omotilewa</h3>
+            <p><strong>Location:</strong> Osi, Ekiti State</p>
+            <p><strong>Status:</strong> Completed (2019)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>
+              Construction of 12 Classrooms for SDG at Methodist Primary School
+            </h3>
+            <p><strong>Location:</strong> Oshodi, Lagos</p>
+            <p><strong>Status:</strong> Completed (2019–2020)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>Worship Duplex for Seventh-Day Adventist Church</h3>
+            <p><strong>Location:</strong> Aseese, Ogun State</p>
+            <p><strong>Status:</strong> Ongoing (2022–Present)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>
+              Renovation of Wards and Furnishings at University College Hospital
+            </h3>
+            <p><strong>Location:</strong> Ibadan, Oyo State</p>
+            <p><strong>Status:</strong> Completed (2020–2023)</p>
+          </div>
+
+          <!-- New Projects -->
+          <div class="project-item" data-aos="zoom-in">
+            <h3>4-Bedroom Bungalow for Mrs. Caroline Ekpe</h3>
+            <p><strong>Location:</strong> Aseese, Ogun State</p>
+            <p><strong>Status:</strong> Completed (2023)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>Design & Build of Event Hall for Awori Obas</h3>
+            <p><strong>Location:</strong> Alimosho Local Government, Lagos</p>
+            <p><strong>Status:</strong> Completed (2023)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>Multipurpose Hall for All Souls Anglican Church</h3>
+            <p><strong>Location:</strong> Lekki, Lagos</p>
+            <p><strong>Status:</strong> Completed (2024)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>32 Units of 4-Bedroom Terraces</h3>
+            <p><strong>Location:</strong> Ikate, Lekki</p>
+            <p><strong>Status:</strong> Ongoing (2024–Present)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>
+              Renovation of Wards and Furnishings at University College Hospital
+            </h3>
+            <p><strong>Location:</strong> Ibadan, Oyo State</p>
+            <p><strong>Status:</strong> Completed (2020–2023)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>3-Bedroom Flat Duplex for Mr. Ajayi Fisayo</h3>
+            <p><strong>Location:</strong> Ado-Ekiti</p>
+            <p><strong>Status:</strong> 70% Completed (2024–Present)</p>
+          </div>
+
+          <div class="project-item" data-aos="zoom-in">
+            <h3>4 Wings of 3-Bedroom Flats for Barrister Daniel Omotilewa</h3>
+            <p><strong>Location:</strong> Magodo, Unilag Estate, Lagos</p>
+            <p><strong>Status:</strong> Ongoing (2024)</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <center>
+        <div class="projects-image" data-aos="fade-right">
+          <img
+            src="image/ourProjectImage.jpg"
+            alt="Our Projects"
+            loading="lazy"
+          />
+        </div>
+      </center>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="our-team" class="our-team">
+      <h2 class="section-title" data-aos="fade-up">Our Team</h2>
+      <div class="team-wrapper">
+        <div class="team-member" data-aos="fade-up">
+          <img
+            src="image/CEO.jpg"
+            alt="Ilesanmi Oluwatosin E."
+            loading="lazy"
+          />
+          <div class="team-info">
+            <h3>Ilesanmi Oluwatosin E.</h3>
+            <p><strong>HND Civil Engineering</strong></p>
+            <p><strong>Managing Director</strong></p>
+            <p>
+              As the Managing Director of ABIK Engineering Construction Limited,
+              he brings a wealth of experience in civil engineering and project
+              management...
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up">
+          <div class="team-info">
+            <h3>Makanjuola Tolulope</h3>
+            <p><strong>BSc Civil Engineering</strong></p>
+            <p><strong>Project Manager</strong></p>
+            <p>
+              He holds a Bachelor's degree in Civil Engineering and has
+              extensive experience in managing large-scale construction
+              projects...
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up">
+          <div class="team-info">
+            <h3>Aina Oluwadare</h3>
+            <p><strong>HND Architecture</strong></p>
+            <p><strong>Project Architect</strong></p>
+            <p>
+              He is responsible for the design and architectural oversight of
+              the company’s projects, ensuring innovative and functional
+              designs...
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up">
+          <div class="team-info">
+            <h3>Muhammed Segun</h3>
+            <p><strong>HND Civil Engineering</strong></p>
+            <p><strong>Site Engineer</strong></p>
+            <p>
+              He oversees day-to-day operations at construction sites, ensuring
+              compliance with design specifications, safety standards, and
+              timelines...
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up">
+          <div class="team-info">
+            <h3>Mrs. Popoola Oluwatosin</h3>
+            <p><strong>HND Quantity Surveying</strong></p>
+            <p><strong>Project Quantity Surveyor</strong></p>
+            <p>
+              She manages project costs, ensuring cost-effective execution and
+              financial planning for all company projects...
+            </p>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up">
+          <div class="team-info">
+            <h3>Mrs. Ilesanmi Opeyemi</h3>
+            <p><strong>Assistant Administrative Officer</strong></p>
+            <p>
+              She supports administrative operations, ensuring smooth
+              communication, documentation management, and office
+              coordination...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" data-aos="fade-up">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="choose-wrapper">
+        <div class="choose-item" data-aos="fade-right">
+          <h3>Experienced Team</h3>
+          <p>
+            Our engineers and project managers bring years of experience in
+            delivering complex projects efficiently.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-left">
+          <h3>Client-Centric Approach</h3>
+          <p>
+            We focus on understanding the unique needs of each client and tailor
+            our services to meet them.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-right">
+          <h3>Timely Delivery</h3>
+          <p>
+            We ensure that projects are completed within the agreed timelines
+            without compromising on quality.
+          </p>
+        </div>
+        <div class="choose-item" data-aos="fade-left">
+          <h3>Innovation & Technology</h3>
+          <p>
+            We utilize the latest technologies and best practices in
+            construction and project management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+      <div class="gallery-wrapper" data-aos="zoom-in">
+        <div class="gallery-item">
+          <img src="image/1.jpg" alt="Gallery Image 1" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/2.jpg" alt="Gallery Image 2" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/3.jpg" alt="Gallery Image 3" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/4.jpg" alt="Gallery Image 4" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/5.jpg" alt="Gallery Image 5" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/6.jpg" alt="Gallery Image 6" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/7.jpg" alt="Gallery Image 7" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/1.jpg" alt="Gallery Image 8" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/8.jpg" alt="Gallery Image 9" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/10.jpg" alt="Gallery Image 10" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/11.jpg" alt="Gallery Image 11" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/12.jpg" alt="Gallery Image 12" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/13.jpg" alt="Gallery Image 13" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/14.jpg" alt="Gallery Image 14" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/15.jpg" alt="Gallery Image 15" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/16.jpg" alt="Gallery Image 16" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/17.jpg" alt="Gallery Image 17" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="image/18.jpg" alt="Gallery Image 18" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section" data-aos="zoom-in">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="contact-description">
+        Get in touch with us today for more information or to schedule a
+        property viewing.
+      </p>
+
+      <div class="contact-details">
+        <h4>Registered Office</h4>
+        <p>
+          Address:
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Plot+17,+H-I,+Orange+Estate,+Arepo,+Lagos+State,+Nigeria"
+            target="_blank"
+          >
+            📍 Plot 17, H-I, Orange Estate, Arepo, Lagos State, Nigeria.
+          </a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:abikengineeringconstructnlmtd@gmail.com">
+            abikengineeringconstructnlmtd@gmail.com
+          </a>
+        </p>
+
+        <p>Phone: <a href="tel:+2347066514206">+234-706-651-4206</a></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <small
+          >&copy; 2025 ABIK ENGINEERING CONSTRUCTION LIMITED | All Rights
+          Reserved</small
+        >
+      </p>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "YOUR_TRACKING_ID");
+    </script>
+
+    <!-- Navigation Menu Toggle -->
+    <script>
+      // Get elements
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      // Toggle navigation menu
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

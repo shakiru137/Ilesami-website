@@ -1,20 +1,24 @@
 /* Our Team Section */
 .our-team {
   padding: 60px 10%;
-  background: linear-gradient(to right, #0d72e5, #69600c);
-  color: white;
+  background: #333333; /* Golden yellow to dark gray gradient */
+  color: #f8f8f8; /* Light text for contrast */
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for title */
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding: 10px;
-  background: linear-gradient(to right, #f0d906, #ffcc00);
+  background: linear-gradient(
+    to right,
+    #f1be62,
+    #ffcc00
+  ); /* Golden yellow to light yellow gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,13 +69,13 @@
 
 .team-info h3 {
   font-size: 1.4rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for member names */
   margin-bottom: 5px;
 }
 
 .team-info p {
   font-size: 1rem;
-  color: #ddd;
+  color: #ddd; /* Light gray for the member description */
 }
 
 /* Responsive Design */
@@ -86,7 +90,6 @@
   }
 
   .team-member img {
-    /* margin-bottom: px5; */
     margin-right: 0;
   }
 }

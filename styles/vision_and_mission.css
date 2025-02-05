@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   gap: 40px;
   padding: 50px 10%;
-  background: linear-gradient(to right, #0d72e5, #69600c);
+  background: #333333; /* Golden yellow to dark gray gradient */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -16,13 +16,13 @@
   min-width: 300px;
   padding: 20px;
   padding-right: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
   color: white;
   text-align: center;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  word-wrap: break-word; /* Ensures long words don't overflow */
-  overflow-wrap: break-word; /* Alternative for older browsers */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   max-width: 100%; /* Prevents content from overflowing */
 }
 
@@ -35,7 +35,7 @@
 .vision h2,
 .mission h2 {
   font-size: 1.8rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for headings */
   margin-bottom: 10px;
 }
 
@@ -44,6 +44,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
   width: 90%;
+  color: rgba(225, 225, 255, 0.9); /* Light grayish text for readability */
 }
 
 /* Responsive Design */

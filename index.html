@@ -31,69 +31,8 @@
     <link rel="stylesheet" href="styles/our_team.css" />
     <link rel="stylesheet" href="styles/weChooseUs.css" />
     <link rel="stylesheet" href="styles/gallery.css" />
-
-    <style>
-      /* Global Reset */
-      html,
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        width: 100vw;
-        max-width: 100vw;
-        background: linear-gradient(#f5f5f5, rgba(0, 0, 255, 0.5), #f5f5f5);
-        overflow-x: hidden;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 1024px) {
-        header {
-          flex-direction: column;
-          align-items: center;
-        }
-        nav ul {
-          flex-direction: column;
-          gap: 10px;
-        }
-        .hero {
-          padding: 60px 20px;
-        }
-        .cta-button {
-          padding: 12px 25px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          align-items: center;
-        }
-        .hero h1 {
-          font-size: 2rem;
-        }
-        .cta-button {
-          font-size: 1rem;
-          padding: 10px 20px;
-        }
-        .team {
-          flex-direction: column;
-        }
-      }
-
-      /* Footer Styles */
-      footer {
-        background: linear-gradient(to right, #0d72e5, #69600c);
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-        width: 100vw;
-        margin: 0;
-      }
-      footer p {
-        margin: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/name.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -151,13 +90,29 @@
       </div>
     </header>
 
-    <!-- Background Wrapper -->
     <div class="background-wrapper" data-aos="slide-right">
       <!-- Hero Section -->
       <section id="home" class="hero" data-aos="slide-up">
-        <h2>Your Dream Home Awaits</h2>
+        <div class="text-animation-container">
+          <span class="animated-text"
+            >ABIK ENGINEERING CONSTRUCTION LIMITED</span
+          >
+        </div>
+
+        <h2
+          style="
+            color: #f8f8f8;
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+          "
+        >
+          Your Dream Home Awaits
+        </h2>
         <a href="#contact" class="cta-button">Get in Touch</a>
-        <p style="color: white">
+        <p style="color: #f8f8f8">
           Your trusted partner in Real Estate and Building Construction
         </p>
       </section>
@@ -413,15 +368,6 @@
         </div>
       </div>
       <br />
-      <center>
-        <div class="projects-image" data-aos="fade-right">
-          <img
-            src="image/ourProjectImage.jpg"
-            alt="Our Projects"
-            loading="lazy"
-          />
-        </div>
-      </center>
     </section>
 
     <!-- Our Team Section -->
@@ -653,31 +599,6 @@
     <script>
       AOS.init();
     </script>
-
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "YOUR_TRACKING_ID");
-    </script>
-
-    <!-- Navigation Menu Toggle -->
-    <script>
-      // Get elements
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("nav-links");
-
-      // Toggle navigation menu
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
+    <script src="script/script.js"></script>
   </body>
 </html>

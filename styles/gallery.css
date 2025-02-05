@@ -1,13 +1,14 @@
+/* Gallery Section */
 .gallery-section {
   padding: 50px 5%;
-  background: linear-gradient(to right, #1e1e1e, #333);
+  background: #333333; /* Gradient using your color scheme */
   text-align: center;
-  color: white;
+  color: #f8f8f8; /* Light text for contrast */
 }
 
 .section-title {
   font-size: 2rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for title */
   margin-bottom: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;

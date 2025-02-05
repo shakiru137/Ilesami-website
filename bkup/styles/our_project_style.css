@@ -1,0 +1,121 @@
+/* Our Projects Section */
+.our-projects {
+  padding: 50px 10%;
+  background: linear-gradient(to right, #0d72e5, #69600c);
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #f0d906;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Projects Wrapper: Uses Grid Layout */
+.projects-wrapper {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns for Laptop */
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Image Container */
+.projects-image {
+  width: 100%;
+  max-width: 450px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards ease-in-out;
+  grid-column: span 3; /* Image spans all 3 columns */
+}
+
+.projects-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Items: Grid-Based */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards ease-in-out;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  color: #f0d906;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns for Mobile */
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-image {
+    grid-column: span 2; /* Image spans both columns */
+    order: 2; /* Moves the image below the projects */
+  }
+
+  .project-item {
+    text-align: center;
+  }
+  .project-item p {
+    padding: 5px;
+  }
+}

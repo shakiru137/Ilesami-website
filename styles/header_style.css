@@ -1,6 +1,6 @@
 /* Background Wrapper */
 .background-wrapper {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  position: relative;
   background-image: url("../image/house.jpg");
   background-size: cover;
   background-position: center;
@@ -15,9 +15,20 @@
   margin: 0;
 }
 
+/* Transparent Black Overlay */
+.background-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Black with 50% transparency */
+  z-index: 0;
+}
+
 /* Hamburger Icon */
 .hamburger {
-  padding: 10px;
   display: none; /* Hidden by default */
   flex-direction: column;
   gap: 5px;
@@ -27,7 +38,7 @@
 .hamburger .line {
   width: 25px;
   height: 4px;
-  background-color: #f0d906;
+  background-color: #f1be62; /* Golden Yellow for Hamburger Icon */
   border-radius: 2px;
 }
 
@@ -42,12 +53,12 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #f0d906;
+  color: #f1be62; /* Golden Yellow for Links */
   font-size: 16px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   /* Show hamburger icon on mobile */
   .hamburger {
     display: flex;
@@ -64,7 +75,6 @@ nav ul li a {
     display: none;
     flex-direction: column;
     gap: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     position: absolute;
     top: 60px;
@@ -91,12 +101,12 @@ header {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Transparent background */
+  background: rgba(0, 0, 0, 0); /* Transparent background by default */
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
   transform: none !important;
 }
 
@@ -104,7 +114,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 20px;
 }
 
 .flex2 {
@@ -114,28 +123,17 @@ header {
   width: 100%;
   padding-top: 10px;
 }
-
 /* Marquee Container */
 .marquee-container {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
-  background: linear-gradient(#0d72e5, #69600c);
+  position: relative; /* Use absolute positioning to cover the entire screen */
+  top: 0; /* Remove any top gap */
+  left: 0; /* Ensure it starts at the left edge */
+  background: #333333; /* Updated gradient */
   padding: 0;
   margin: 0;
-}
-
-/* Marquee Container */
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  background: linear-gradient(#0d72e5, #69600c);
-  padding: 0;
-  margin: 0;
-  /* margin-left: -20px; */
 }
 
 /* Marquee Text */
@@ -144,12 +142,13 @@ header {
   white-space: nowrap;
   animation: marquee-scroll 20s linear infinite;
   padding-left: 100%; /* Ensure it starts from off-screen */
+  height: 100%; /* Ensure it fills the height */
 }
 
 /* Text Style */
 .marquee span {
-  font-size: 1.5rem;
-  color: #f0d906;
+  font-size: 1.5rem; /* Adjusted font size to make it more prominent */
+  color: #f1be62; /* Golden Yellow for marquee text */
   font-weight: bold;
   display: inline-block;
 }
@@ -180,19 +179,18 @@ header .logo img {
 
 .social-media a {
   margin-left: 10px;
-  color: #f0d906;
+  color: #f1be62; /* Golden Yellow for social media links */
   text-decoration: none;
 }
 
 .social-media a:hover {
-  color: #ff7f50; /* Highlight color */
+  color: #333333; /* Dark Gray hover effect */
 }
 
 /* Hero Section */
 .hero {
   margin-top: 100px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
   padding: 0;
   width: 75%;
   height: 40%;
@@ -201,14 +199,16 @@ header .logo img {
 
 .hero p {
   font-size: 1.2em;
+  z-index: 9999;
 }
 
 .cta-button {
-  background: #ff7e5f;
-  color: white;
+  background: #f1be62; /* Golden Yellow Button */
+  color: #333333;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2em;
+  font-weight: bolder;
   border-radius: 5px;
   margin-top: 20px;
   display: inline-block;
@@ -216,5 +216,6 @@ header .logo img {
 }
 
 .cta-button:hover {
-  background: #ef5731;
+  background: #333333; /* Dark Gray on Hover */
+  color: #f1be62;
 }

@@ -1,7 +1,7 @@
 /* About Section Styling */
 #about {
   padding: 80px 10%;
-  background: linear-gradient(to right, #0d72e5, #69600c);
+  background: #333333; /* Modern gradient with provided colors */
 }
 
 /* Flex container */
@@ -19,14 +19,14 @@
 
 .about-text h2 {
   font-size: 2.5rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for heading */
   margin-bottom: 10px;
 }
 
 .about-text p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #fff;
+  color: #f8f8f8; /* Light color for text */
 }
 
 /* Image section */
@@ -57,6 +57,7 @@
 
   .about-text p {
     font-size: 1rem;
+    color: #f8f8f8; /* Ensure readability on smaller screens */
   }
 
   .about-image img {

@@ -1,0 +1,84 @@
+/* Animated text styling */
+.animated-text {
+  font-size: 1.5rem; /* Large font size */
+  color: #f1be62; /* Gold color */
+  font-family: "Curlz MT", cursive; /* Using Curlz MT font */
+  font-weight: bold;
+  text-transform: uppercase; /* Make text uppercase for emphasis */
+  letter-spacing: 5px; /* Add space between letters */
+  animation: fadeInUp 3s ease-out, colorChange 3s ease-in-out infinite;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
+}
+
+/* Fade in and move up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Color change animation */
+@keyframes colorChange {
+  0% {
+    color: #f1be62; /* Initial color */
+  }
+  50% {
+    color: #ff6347; /* Intermediate color */
+  }
+  100% {
+    color: #f1be62; /* Back to original color */
+  }
+}
+
+/* Hero Section */
+.hero {
+  margin-top: -50px; /* Adjust for the fixed header */
+  text-align: center;
+  padding: 0;
+  width: 75%;
+  height: 40%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Hero Text */
+.hero h2 {
+  color: #f8f8f8;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #f1be62; /* Golden Yellow Button */
+  color: #333333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background 0.5s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #333333; /* Dark Gray on Hover */
+  color: #f1be62;
+}
+
+/* Social Media Links */
+.social-media a {
+  margin-left: 10px;
+  color: #f1be62; /* Golden Yellow for social media links */
+  text-decoration: none;
+}

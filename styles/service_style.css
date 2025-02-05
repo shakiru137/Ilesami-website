@@ -2,7 +2,7 @@
 #services {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #0d72e5, #69600c);
+  background: #333333; /* Golden yellow to dark gray gradient */
 }
 
 .service-container {
@@ -15,8 +15,11 @@
 
 .service-item {
   width: 100%;
+  flex: 1 1 45%;
   padding: 20px;
-  background: linear-gradient(to right, #0d72e5, #69600c);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Golden yellow to dark gray gradient */
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -28,12 +31,12 @@
 
 .service-item h3,
 h2 {
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for headings */
   font-size: 1.2em;
 }
 
 .service-item p,
 p {
   font-size: 1em;
-  color: rgba(225, 225, 255, 0.9);
+  color: rgba(225, 225, 255, 0.9); /* Light grayish text for content */
 }

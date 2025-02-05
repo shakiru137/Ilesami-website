@@ -1,6 +1,7 @@
+/* Why Choose Us Section */
 .why-choose-us {
   padding: 50px 10%;
-  background: linear-gradient(to right, #0d72e5, #69600c);
+  background: #333333; /* Golden yellow to dark gray gradient */
   color: white;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -9,7 +10,7 @@
 
 .section-title {
   font-size: 2rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for section title */
   margin-bottom: 20px;
   letter-spacing: 1px;
   padding: 10px;
@@ -39,15 +40,16 @@
 
 .choose-item h3 {
   font-size: 1.3rem;
-  color: #f0d906;
+  color: #f1be62; /* Golden yellow for subheadings */
   margin-bottom: 10px;
 }
 
 .choose-item p {
   font-size: 1rem;
-  color: #ddd;
+  color: rgba(225, 225, 255, 0.9); /* Light gray text for description */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .choose-wrapper {
     grid-template-columns: 1fr;
