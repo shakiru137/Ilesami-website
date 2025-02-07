@@ -15,18 +15,14 @@
   };
 })();
 
-// Navigation Menu Toggle
 document.addEventListener("DOMContentLoaded", function () {
-  // Get elements
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("nav-links");
 
-  // Toggle navigation menu
-  if (hamburger && navLinks) {
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  }
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
 });
 
 // Get the header element
