@@ -32,6 +32,7 @@
   color: #f8f8f8; /* White links for readability */
   font-weight: bold;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .contact-details a:hover {
